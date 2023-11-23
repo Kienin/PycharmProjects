@@ -1,0 +1,12 @@
+{
+  "name": "Kevin",
+  "age": "18",
+  "gender": "male",
+  "hobbies": ["Weight Lifting", "Reading", "Coding"],
+  "friends": [{
+    "name": "Jasmine",
+    "relationship": "girlfriend",
+    "is_programmer": null
+  }]
+}
+
