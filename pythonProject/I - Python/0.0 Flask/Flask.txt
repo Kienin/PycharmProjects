@@ -1,0 +1,47 @@
+In a Flask project, the location where you should store your HTML templates,
+including index.html, is typically in a folder named templates. Flask follows a
+convention where it looks for templates in a folder named templates within the application
+or module directory.
+
+Here's a common project structure:
+
+------------------------------------------------------------------------------>
+Copy code
+yourproject/
+|-- app.py
+|-- templates/
+|   |-- index.html
+|-- venv/  # (virtual environment, if used)
+In this structure:
+------------------------------------------------------------------------------<
+
+yourproject is the root directory of your Flask project.
+app.py is your main Flask application script.
+templates is a folder where you store your HTML templates.
+For example, let's say you have a route in app.py that renders index.html:
+
+------------------------------------------------------------------------------>
+
+python
+Copy code
+# app.py
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+------------------------------------------------------------------------------<
+
+With this setup, Flask will automatically look for the index.html file in the templates folder
+within the same directory as your main application script (app.py). When the home route is accessed,
+ Flask will render the index.html template.
+
+Make sure to adhere to this convention, as it helps Flask locate and render templates correctly.
+If you have multiple blueprints or modules in your project, each can have its own templates folder
+ following the same convention.

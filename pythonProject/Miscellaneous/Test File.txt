@@ -1,0 +1,5 @@
+Hello World! My name is Kevin Dacanay
+This is a test file for 0.1 GUI Open File
+
+*---*---*---*---*---*---*---*---*---*---
+Have a good day!

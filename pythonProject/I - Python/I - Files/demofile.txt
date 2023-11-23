@@ -1,0 +1,4 @@
+Hello World! This is a demo file for testing purposes.
+- Kevin Dacanay!
+Writing this new line with f.write() function!
+Writing this new line with f.write() function!
